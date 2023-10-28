@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicios Javascript</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Inicios JavaScript</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Inicios Javascript</h1>
-
+    <header>
+        <h1><b>Iniciando con JavaScript</b></h1>
+    </header>
+    <container class="formulario">
+        <h3><b>Ingrese tres calificaciones</b></h3>
+        <form id="formularioCalificaciones">
+            <label for="calificacion1">Calificación 1:</label>
+            <input type="number" id="calificacion1" min="0" max="10" required=""><br><br>
+            <label for="calificacion2">Calificación 2:</label>
+            <input type="number" id="calificacion2" min="0" max="10" required=""><br><br>
+            <label for="calificacion3">Calificación 3:</label>
+            <input type="number" id="calificacion3" min="0" max="10" required=""><br><br>
+            <button type="button" onclick="promedio()" class="btn btn-light"><b>Enviar</b></button>
+        </form>
+    </container>
+    <container class="resultadoformulario">
+        <p id="resultado"></p>
+    </container>
     <script src="index.js"></script>
+
 </body>
 </html>
